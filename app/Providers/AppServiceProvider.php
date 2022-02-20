@@ -9,7 +9,7 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Register any application services.
      *
-     * @return void
+     * @return void Returns nothing.
      */
     public function register()
     {
@@ -19,7 +19,7 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      *
-     * @return void
+     * @return void Returns nothing.
      */
     public function boot()
     {

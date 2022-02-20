@@ -7,20 +7,12 @@ use Throwable;
 
 class Handler extends ExceptionHandler
 {
-    /**
-     * A list of the exception types that are not reported.
-     *
-     * @var array<int, class-string<Throwable>>
-     */
+    /** @var array<int, class-string<Throwable>> $dontReport A list of the exception types that are not reported. */
     protected $dontReport = [
         //
     ];
 
-    /**
-     * A list of the inputs that are never flashed for validation exceptions.
-     *
-     * @var array<int, string>
-     */
+    /** @var array<int, string> $dontFlash A list of the inputs that are never flashed for validation exceptions. */
     protected $dontFlash = [
         'current_password',
         'password',
@@ -30,7 +22,7 @@ class Handler extends ExceptionHandler
     /**
      * Register the exception handling callbacks for the application.
      *
-     * @return void
+     * @return void Returns nothing
      */
     public function register()
     {

@@ -9,11 +9,7 @@ use Illuminate\Support\Facades\Event;
 
 class EventServiceProvider extends ServiceProvider
 {
-    /**
-     * The event listener mappings for the application.
-     *
-     * @var array<class-string, array<int, class-string>>
-     */
+    /** @var array<class-string, array<int, class-string>> $listen The event listener mappings for the application. */
     protected $listen = [
         Registered::class => [
             SendEmailVerificationNotification::class,
@@ -23,7 +19,7 @@ class EventServiceProvider extends ServiceProvider
     /**
      * Register any events for your application.
      *
-     * @return void
+     * @return void Returns nothing.
      */
     public function boot()
     {
@@ -33,7 +29,7 @@ class EventServiceProvider extends ServiceProvider
     /**
      * Determine if events and listeners should be automatically discovered.
      *
-     * @return bool
+     * @return bool Returns true if events and listeners should be discovered else false.
      */
     public function shouldDiscoverEvents()
     {
