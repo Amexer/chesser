@@ -34,7 +34,7 @@ class User extends Authenticatable
     /** @var array<string, string> $casts The attributes that should be cast. */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'is_super_admin'    => 'boolean',
+        'is_super_admin' => 'boolean',
     ];
 
     /**

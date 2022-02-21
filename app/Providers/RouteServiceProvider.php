@@ -10,8 +10,8 @@ use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
 {
-    /** @var string HOME The path to the "home" route for your application. */
-    public const HOME = '/home';
+    /** @varr string HOME The path to the "home" route for your application. */
+    public const HOME = '/dashboard';
 
     /**
      * Define your route model bindings, pattern filters, etc.
