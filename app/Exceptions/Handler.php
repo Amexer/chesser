@@ -22,7 +22,7 @@ class Handler extends ExceptionHandler
     /**
      * Register the exception handling callbacks for the application.
      *
-     * @return void Returns nothing
+     * @return void Returns nothing.
      */
     public function register()
     {
